@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en" class="socialpass-landing dark-mode readable-mode" data-hm-autoset-preferences="color-scheme">
+    <head>
+        <!-- Meta tags -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+        <!-- Title -->
+        <title>SocialPass - Enhance Your Community</title>
+
+        <!-- Fav icon -->
+        <link rel="icon" href="https://res.cloudinary.com/nfty-labs/image/upload/v1652295352/coloricon_gmy7il.svg">
+
+        <!-- Halfmoon CSS -->
+        <link href="css/halfmoon.css" rel="stylesheet" />
+
+        <!-- Rubik font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome 6 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- SEO -->
+        <meta name="description" content="Offering hosted solutions and packaged SDKs to grow and manage your Web3 Community.">
+        <meta name="author" content="SocialPass">
+        <meta name="keywords" content="web3, nft, web2, bayc, crypto, ticketing, ticket">
+
+        <!-- Open graph -->
+        <meta property="og:type" content="article">
+        <meta property="og:url" content="https://socialpass.io">
+        <meta property="og:title" content="SocialPass - Enhance Your Community">
+        <meta property="og:description" content="Offering hosted solutions and packaged SDKs to grow and manage your Web3 Community.">
+        <meta property="og:image" content="https://res.cloudinary.com/nfty-labs/image/upload/v1652294039/socialpass-landing-og-image_iajmq5.png">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@nftylab">
+
+        <!-- Custom styles -->
+        <style type="text/css">
+
+        /**
+         * --------------------------------------------------------------------
+         * [ NFTY theme ]
+         * --------------------------------------------------------------------
+         */
+
+        /* Base */
+
+        :root {
+            --base-font-family: "Rubik", sans-serif;
+        }
+
+        /* System colors */
+
+        :root {
+            /* NFTY purple */
+
+            --nfty-purple-color-hue: 287;
+            --nfty-purple-color-saturation: 47%;
+            --nfty-purple-color-lightness: 38%;
+            --nfty-purple-color-lightness-step-up-1: 44%;
+            --nfty-purple-color-lightness-step-up-2: 50%;
+            --nfty-purple-color-lightness-step-down-1: 32%;
+            --nfty-purple-color-lightness-step-down-2: 26%;
+
+            --nfty-purple-color-hsl: var(--nfty-purple-color-hue), var(--nfty-purple-color-saturation), var(--nfty-purple-color-lightness);
+            --nfty-purple-color-light-hsl: var(--nfty-purple-color-hue), var(--nfty-purple-color-saturation), var(--nfty-purple-color-lightness-step-up-2);
+            --nfty-purple-color-very-light-hsl: var(--nfty-purple-color-hue), var(--nfty-purple-color-saturation), 95%;
+            --nfty-purple-color-dim-hsl: var(--nfty-purple-color-hue), var(--nfty-purple-color-saturation), var(--nfty-purple-color-lightness-step-down-2);
+            --nfty-purple-color-very-dim-hsl: var(--nfty-purple-color-hue), 12.5%, 12.5%;
+
+            --nfty-purple-color: hsl(var(--nfty-purple-color-hsl));
+            --nfty-purple-color-light: hsl(var(--nfty-purple-color-light-hsl));
+            --nfty-purple-color-very-light: hsl(var(--nfty-purple-color-very-light-hsl));
+            --nfty-purple-color-dim: hsl(var(--nfty-purple-color-dim-hsl));
+            --nfty-purple-color-very-dim: hsl(var(--nfty-purple-color-very-dim-hsl));
+
+            --text-color-on-nfty-purple-color-bg: var(--white-color);
+
+            /* NFTY pink */
+
+            --nfty-pink-color-hue: 340;
+            --nfty-pink-color-saturation: 69%;
+            --nfty-pink-color-lightness: 58%;
+            --nfty-pink-color-lightness-step-up-1: 64%;
+            --nfty-pink-color-lightness-step-up-2: 70%;
+            --nfty-pink-color-lightness-step-down-1: 52%;
+            --nfty-pink-color-lightness-step-down-2: 44%;
+
+            --nfty-pink-color-hsl: var(--nfty-pink-color-hue), var(--nfty-pink-color-saturation), var(--nfty-pink-color-lightness);
+            --nfty-pink-color-light-hsl: var(--nfty-pink-color-hue), var(--nfty-pink-color-saturation), var(--nfty-pink-color-lightness-step-up-2);
+            --nfty-pink-color-very-light-hsl: var(--nfty-pink-color-hue), var(--nfty-pink-color-saturation), 95%;
+            --nfty-pink-color-dim-hsl: var(--nfty-pink-color-hue), var(--nfty-pink-color-saturation), var(--nfty-pink-color-lightness-step-down-2);
+            --nfty-pink-color-very-dim-hsl: var(--nfty-pink-color-hue), 12.5%, 12.5%;
+
+            --nfty-pink-color: hsl(var(--nfty-pink-color-hsl));
+            --nfty-pink-color-light: hsl(var(--nfty-pink-color-light-hsl));
+            --nfty-pink-color-very-light: hsl(var(--nfty-pink-color-very-light-hsl));
+            --nfty-pink-color-dim: hsl(var(--nfty-pink-color-dim-hsl));
+            --nfty-pink-color-very-dim: hsl(var(--nfty-pink-color-very-dim-hsl));
+
+            --text-color-on-nfty-pink-color-bg: var(--white-color);
+        }
+
+        /* Context colors */
+
+        :root {
+            /* Primary colors */
+
+            --primary-color-hue: var(--nfty-purple-color-hue);
+            --primary-color-saturation: var(--nfty-purple-color-saturation);
+            --primary-color-lightness: var(--nfty-purple-color-lightness);
+            --primary-color-lightness-step-up-1: var(--nfty-purple-color-lightness-step-up-1);
+            --primary-color-lightness-step-up-2: var(--nfty-purple-color-lightness-step-up-2);
+            --primary-color-lightness-step-down-1: var(--nfty-purple-color-lightness-step-down-1);
+            --primary-color-lightness-step-down-2: var(--nfty-purple-color-lightness-step-down-2);
+
+            --primary-color-hsl: var(--nfty-purple-color-hsl);
+            --primary-color-light-hsl: var(--nfty-purple-color-light-hsl);
+            --primary-color-very-light-hsl: var(--nfty-purple-color-very-light-hsl);
+            --primary-color-dim-hsl: var(--nfty-purple-color-dim-hsl);
+            --primary-color-very-dim-hsl: var(--nfty-purple-color-very-dim-hsl);
+
+            --primary-color: var(--nfty-purple-color);
+            --primary-color-light: var(--nfty-purple-color-light);
+            --primary-color-very-light: var(--nfty-purple-color-very-light);
+            --primary-color-dim: var(--nfty-purple-color-dim);
+            --primary-color-very-dim: var(--nfty-purple-color-very-dim);
+
+            --text-color-on-primary-color-bg: var(--text-color-on-nfty-purple-color-bg);
+
+            /* Primary colors */
+
+            --secondary-color-hue: var(--nfty-pink-color-hue);
+            --secondary-color-saturation: var(--nfty-pink-color-saturation);
+            --secondary-color-lightness: var(--nfty-pink-color-lightness);
+            --secondary-color-lightness-step-up-1: var(--nfty-pink-color-lightness-step-up-1);
+            --secondary-color-lightness-step-up-2: var(--nfty-pink-color-lightness-step-up-2);
+            --secondary-color-lightness-step-down-1: var(--nfty-pink-color-lightness-step-down-1);
+            --secondary-color-lightness-step-down-2: var(--nfty-pink-color-lightness-step-down-2);
+
+            --secondary-color-hsl: var(--nfty-pink-color-hsl);
+            --secondary-color-light-hsl: var(--nfty-pink-color-light-hsl);
+            --secondary-color-very-light-hsl: var(--nfty-pink-color-very-light-hsl);
+            --secondary-color-dim-hsl: var(--nfty-pink-color-dim-hsl);
+            --secondary-color-very-dim-hsl: var(--nfty-pink-color-very-dim-hsl);
+
+            --secondary-color: var(--nfty-pink-color);
+            --secondary-color-light: var(--nfty-pink-color-light);
+            --secondary-color-very-light: var(--nfty-pink-color-very-light);
+            --secondary-color-dim: var(--nfty-pink-color-dim);
+            --secondary-color-very-dim: var(--nfty-pink-color-very-dim);
+
+            --text-color-on-secondary-color-bg: var(--text-color-on-nfty-pink-color-bg);
+        }
+
+        .dark-mode {
+            /* NFTY purple */
+
+            --nfty-purple-color-hue: 290;
+            --nfty-purple-color-saturation: 80%;
+            --nfty-purple-color-lightness: 45%;
+            --nfty-purple-color-lightness-step-up-1: 55%;
+            --nfty-purple-color-lightness-step-up-2: 65%;
+            --nfty-purple-color-lightness-step-down-1: 45%;
+            --nfty-purple-color-lightness-step-down-2: 40%;
+
+            /* NFTY pink */
+
+            --nfty-pink-color-hue: 340;
+            --nfty-pink-color-saturation: 75%;
+            --nfty-pink-color-lightness: 58%;
+            --nfty-pink-color-lightness-step-up-1: 64%;
+            --nfty-pink-color-lightness-step-up-2: 70%;
+            --nfty-pink-color-lightness-step-down-1: 50%;
+            --nfty-pink-color-lightness-step-down-2: 42%;
+        }
+
+        /* Buttons */
+
+        :root {
+            --button-font-weight: var(--bold-font-weight);
+            --button-vertical-padding: 0.6rem;
+            --button-horizontal-padding: 1.4rem;
+            --button-border-radius: var(--rounded-3-border-radius);
+
+            /* Small button */
+
+            --small-button-vertical-padding: 0.4rem;
+            --small-button-horizontal-padding: 1.2rem;
+
+            /* Large button */
+
+            --large-button-vertical-padding: 0.8rem;
+            --large-button-horizontal-padding: 1.6rem;
+
+            /* Default button */
+
+            --button-webkit-font-smoothing: var(--base-webkit-font-smoothing);
+            --button-moz-osx-font-smoothing: var(--button-moz-osx-font-smoothing);
+
+            /* Link button */
+
+            --button-link-webkit-font-smoothing: var(--base-webkit-font-smoothing);
+            --button-link-moz-osx-font-smoothing: var(--button-moz-osx-font-smoothing);
+        }
+
+        .btn-gradient {
+            -webkit-font-smoothing: var(--base-webkit-font-smoothing);
+            -moz-osx-font-smoothing: var(--base-moz-osx-font-smoothing);
+            color: var(--text-color-on-primary-color-bg);
+            background-color: var(--primary-color);
+            background-image: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            border: 0;
+        }
+
+        .btn-gradient:hover {
+            color: var(--text-color-on-primary-color-bg);
+            background-image: linear-gradient(135deg, var(--secondary-color-dim), var(--primary-color-dim));
+        }
+
+        .btn-gradient:active {
+            color: var(--text-color-on-primary-color-bg);
+            background-image: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+        }
+
+        /* Dropdown */
+
+        :root {
+            --dropdown-menu-border-radius: var(--rounded-5-border-radius);
+        }
+
+        /* Text utilities */
+
+        .text-gradient {
+            color: var(--primary-color) !important;
+            background: -webkit-linear-gradient(0deg, var(--secondary-color), var(--primary-color)) !important;
+            -webkit-background-clip: text !important;
+            -webkit-text-fill-color: transparent !important;
+            -webkit-font-smoothing: auto !important;
+            -moz-osx-font-smoothing: auto !important;
+        }
+
+        @media (max-width: 576px) {
+            .fs-base-sm-down {
+                font-size: var(--base-font-size) !important;
+            }
+        }
+
+        /**
+         * --------------------------------------------------------------------
+         * [ SocialPass landing ]
+         * --------------------------------------------------------------------
+         */
+
+        .socialpass-landing .bg-gradient {
+            background-image: linear-gradient(60deg, transparent, hsla(var(--secondary-color-hsl), 0.15), hsla(var(--primary-color-hsl), 0.2), transparent);
+        }
+
+        .socialpass-landing.dark-mode .bg-gradient {
+            background-image: linear-gradient(60deg, transparent, hsla(var(--secondary-color-hsl), 0.075), hsla(var(--primary-color-hsl), 0.1), transparent);
+        }
+
+        </style>
+    </head>
+    <body class="bg-dark-dm">
+        <div class="page-wrapper">
+            <div class="content-wrapper">
+
+                <!-- Header start -->
+                <section>
+                    <div class="container-xl px-xl-50">
+                        <div class="content">
+                            <div class="d-flex align-items-center">
+                                <img src="https://res.cloudinary.com/nfty-labs/image/upload/v1652295403/color-horizontal_tzq6zq.svg" class="hidden-dm ws-200 pe-none" alt="Logo">
+                                <img src="https://res.cloudinary.com/nfty-labs/image/upload/v1652295404/half-horizontal_ftaov4.svg" class="hidden-lm ws-200 pe-none" alt="Logo">
+
+                                <!-- Dark mode toggle start -->
+                                <button class="btn btn-square btn-rounded ms-15" data-hm-toggle="dark-mode">
+                                    <i class="fa-solid fa-moon text-primary"></i>
+                                    <span class="visually-hidden">Toggle dark mode</span>
+                                </button>
+                                <!-- Dark mode toggle end -->
+
+                                <!-- Menu dropdown start -->
+                                <div class="dropdown with-arrow d-inline-block d-lg-none ms-auto" data-hm-toggle="dropdown" aria-expanded="false">
+                                    <button class="btn text-primary" id="menu-dropdown-toggle">
+                                        <i class="fa-solid fa-bars"></i>
+                                        <span class="ms-5 d-none d-sm-inline">Menu</span>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end ws-250 p-10" aria-labelledby="menu-dropdown-toggle">
+                                        <li>
+                                            <a href="#features" class="dropdown-item">Features</a>
+                                        </li>
+                                        <li>
+                                            <a href="#pricing" class="dropdown-item">Pricing</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown-item">Resources</a>
+                                        </li>
+                                        <li class="dropdown-divider"></li>
+                                        <li class="dropdown-header">Contact Us</li>
+                                        <li class="dropdown-content row">
+                                            <div class="col-2">
+                                                <a href="https://twitter.com/NFTYLab" target="_blank" class="text-primary me-5 fsr-5">
+                                                    <i class="fa-brands fa-twitter"></i>
+                                                    <span class="visually-hidden">Twitter</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-2">
+                                                <a href="https://t.me/NFTYChat" target="_blank" class="text-primary me-5 fsr-5">
+                                                    <i class="fa-brands fa-telegram"></i>
+                                                    <span class="visually-hidden">Telegram</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-2">
+                                                <a href="https://discord.gg/nftylabs" target="_blank" class="text-primary me-5 fsr-5">
+                                                    <i class="fa-brands fa-discord"></i>
+                                                    <span class="visually-hidden">Discord</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-2 ps-5">
+                                                <a href="https://www.linkedin.com/company/nfty-labs" target="_blank" class="text-primary me-5 fsr-5">
+                                                    <i class="fa-brands fa-linkedin"></i>
+                                                    <span class="visually-hidden">LinkedIn</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-2 ps-5">
+                                                <a href="https://instagram.com/nftylab?utm_medium=copy_link" target="_blank" class="text-primary me-5 fsr-5">
+                                                    <i class="fa-brands fa-instagram"></i>
+                                                    <span class="visually-hidden">Instagram</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-2">
+                                                <a href="https://nftylabs.medium.com/" target="_blank" class="text-primary me-5 fsr-5">
+                                                    <i class="fa-brands fa-medium"></i>
+                                                    <span class="visually-hidden">Medium</span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="dropdown-divider"></li>
+                                        <li class="dropdown-content mt-10">
+                                            <a href="https://socialpass.nftytesting.com/accounts/login/" class="btn btn-gradient btn-block">
+                                                Log In/Sign Up
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Menu dropdown end -->
+                                
+                                <!-- Links start -->
+                                <div class="d-none d-lg-flex align-items-center ms-auto">
+                                    <div class="text-strong me-30">
+                                        <a href="#features" class="link-reset fw-bold text-decoration-none">Features</a>
+                                    </div>
+                                    <div class="text-strong me-30">
+                                        <a href="#pricing" class="link-reset fw-bold text-decoration-none">Pricing</a>
+                                    </div>
+                                    <div class="text-strong me-30">
+                                        <a href="#" class="link-reset fw-bold text-decoration-none">Resources</a>
+                                    </div>
+
+                                    <!-- Contact us dropdown start -->
+                                    <div class="text-strong me-30 dropdown with-arrow" data-hm-toggle="dropdown" aria-expanded="false">
+                                        <a href="#features" class="link-reset fw-bold text-decoration-none" id="contact-dropdown-toggle">
+                                            Contact Us
+                                            <i class="fa-solid fa-angle-down ms-5"></i>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-center p-10 ws-200" aria-labelledby="contact-dropdown-toggle">
+                                            <li>
+                                                <a href="https://twitter.com/NFTYLab" target="_blank" class="dropdown-item text-primary fw-bold d-flex align-items-center">
+                                                    <div class="ws-25 me-5">
+                                                        <i class="fa-brands fa-twitter me-5"></i>
+                                                    </div>
+                                                    <span>Twitter</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://t.me/NFTYChat" target="_blank" class="dropdown-item text-primary fw-bold d-flex align-items-center">
+                                                    <div class="ws-25 me-5">
+                                                        <i class="fa-brands fa-telegram me-5"></i>
+                                                    </div>
+                                                    <span>Telegram</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://discord.gg/nftylabs" target="_blank" class="dropdown-item text-primary fw-bold d-flex align-items-center">
+                                                    <div class="ws-25 me-5">
+                                                        <i class="fa-brands fa-discord me-5"></i>
+                                                    </div>
+                                                    <span>Discord</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.linkedin.com/company/nfty-labs" target="_blank" class="dropdown-item text-primary fw-bold d-flex align-items-center">
+                                                    <div class="ws-25 me-5">
+                                                        <i class="fa-brands fa-linkedin me-5"></i>
+                                                    </div>
+                                                    <span>LinkedIn</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://instagram.com/nftylab?utm_medium=copy_link" target="_blank" class="dropdown-item text-primary fw-bold d-flex align-items-center">
+                                                    <div class="ws-25 me-5">
+                                                        <i class="fa-brands fa-instagram me-5"></i>
+                                                    </div>
+                                                    <span>Instagram</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://nftylabs.medium.com/" target="_blank" class="dropdown-item text-primary fw-bold d-flex align-items-center">
+                                                    <div class="ws-25 me-5">
+                                                        <i class="fa-brands fa-medium me-5"></i>
+                                                    </div>
+                                                    <span>Medium</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- Contact us dropdown end -->
+
+                                    <a href="https://socialpass.nftytesting.com/accounts/login/" class="btn btn-gradient">Log In/Sign Up</a>
+                                </div>
+                                <!-- Links end -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Header end -->
+                
+                <!-- Hero section start -->
+                <section>
+                    <div class="container-xl pt-sm-30 pb-50 px-xl-50">
+                        <div class="row row-eq-spacing-xl">
+
+                            <!-- First column start -->
+                            <div class="col-xl-6 align-self-center">
+                                <div class="content">
+                                    <h1 class="display-1 fw-700 text-strong">
+                                        Enhance Your <span class="text-gradient">Community</span>
+                                    </h1>
+                                    <p class="text-muted fsr-5">
+                                        Offering hosted solutions and packaged SDKs to grow and manage your Web3 Community.
+                                    </p>
+                                    <div class="mt-20">
+                                        <a href="#features" class="btn btn-gradient btn-lg py-sm-15 px-sm-20 me-5 mt-10">Explore Features</a>
+                                        <a href="https://nftylabs.typeform.com/socialpass" class="btn btn-link btn-lg py-sm-15 px-sm-20 mt-10">Contact Sales</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- First column end -->
+
+                            <!-- Second column start -->
+                            <div class="col-xl-5 offset-xl-1 align-self-center">
+                                <div class="content">
+                                    <img src="https://via.placeholder.com/600" class="d-block ws-600 h-auto rounded-5 mw-100 mx-auto my-10 my-sm-20" alt="Hero image">
+                                </div>
+                            </div>
+                            <!-- Second column end -->
+
+                        </div>
+                    </div>
+                </section>
+                <!-- Hero section end -->
+
+                <!-- Secondary hero section start -->
+                <section class="bg-gradient">
+                    <div class="container-xl py-50 px-xl-50">
+                        <div class="row row-eq-spacing-lg">
+
+                            <!-- First column start -->
+                            <div class="col-lg-6">
+                                <div class="content">
+                                    <h2 class="display-2 fw-700 text-strong">
+                                        Powering your move to <span class="text-gradient">MetaFi</span>
+                                    </h2>
+                                    <p class="text-muted fsr-5">
+                                        Servicing the biggest industries for their next big move.
+                                    </p>
+
+                                    <!-- Industry start -->
+                                    <div class="d-flex align-items-start mt-50">
+                                        <div class="flex-shrink-0 ws-50 hs-50 ws-sm-75 hs-sm-75 bg-content border border-2 border-secondary rounded-circle fs-base-p12 fs-base-sm-down d-flex align-items-center justify-content-center me-30">
+                                            <i class="fa-solid fa-bolt text-gradient"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="fsr-3 text-strong mt-0">
+                                                Content Creators
+                                            </h5>
+                                            <p>
+                                                Twitch streamers, YouTubers, artists can all harness NFTs to earn revenue, deliver value to donators & fans all through one platform.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Industry end -->
+                                    
+                                </div>
+                            </div>
+                            <!-- First column end -->
+
+                            <!-- Second column start -->
+                            <div class="col-lg-5 offset-lg-1 py-lg-30">
+                                <div class="content">
+
+                                    <!-- Industry start -->
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-shrink-0 ws-50 hs-50 ws-sm-75 hs-sm-75 bg-content border border-2 border-secondary rounded-circle fs-base-p12 fs-base-sm-down d-flex align-items-center justify-content-center me-30">
+                                            <i class="fa-solid fa-ticket text-gradient"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="fsr-3 text-strong mt-0">
+                                                Events, Shows, Ticketing
+                                            </h5>
+                                            <p>
+                                                Allow tickets to be NFTs, social tokens, or just off chain 1 of 1s to take advantage of Web3's potential.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Industry end -->
+
+                                    <!-- Industry start -->
+                                    <div class="d-flex align-items-start content mb-0 mx-0">
+                                        <div class="flex-shrink-0 ws-50 hs-50 ws-sm-75 hs-sm-75 bg-content border border-2 border-secondary rounded-circle fs-base-p12 fs-base-sm-down d-flex align-items-center justify-content-center me-30">
+                                            <i class="fa-solid fa-film text-gradient"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="fsr-3 text-strong mt-0">
+                                                Movie Industry
+                                            </h5>
+                                            <p>
+                                                Movies can be pre-funded using NFTs and Social Tokens, which can add interactivity to the film while also connecting fans to actors in ways never seen before.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Industry end -->
+
+                                    <!-- Industry start -->
+                                    <div class="d-flex align-items-start content mb-0 mx-0">
+                                        <div class="flex-shrink-0 ws-50 hs-50 ws-sm-75 hs-sm-75 bg-content border border-2 border-secondary rounded-circle fs-base-p12 fs-base-sm-down d-flex align-items-center justify-content-center me-30">
+                                            <i class="fa-solid fa-football text-gradient"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="fsr-3 text-strong mt-0">
+                                                Sports Industry
+                                            </h5>
+                                            <p>
+                                                Give your supporters the option to own a piece of the franchise in a unique way through fan tokens and/or NFTs.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Industry end -->
+
+                                </div>
+                            </div>
+                            <!-- Second column end -->
+
+                        </div>
+                    </div>
+                </section>
+                <!-- Secondary hero section end -->
+
+                <!-- Features section start -->
+                <section id="features">
+                    <div class="container-xl py-50 px-xl-50">
+
+                        <!-- Tabs start -->
+                        <div class="content">
+                            <ul class="tabs justify-content-center border-0" role="tablist">
+                                <li class="tab-item">
+                                    <a href="#" class="tab-link px-10 fw-bold fs-base-p4 fs-base-sm-down active" data-hm-toggle="tab" data-hm-target="team-dashboard" id="team-dashboard-tab" type="button" role="tab" aria-controls="team-dashboard" aria-selected="true">
+                                        <span class="text-gradient">Team Dashboard</span>
+                                    </a>
+                                </li>
+                                <li class="tab-item">
+                                    <a href="#" class="tab-link px-10 fw-bold fs-base-p4 fs-base-sm-down" data-hm-toggle="tab" data-hm-target="token-gates" id="token-gates-tab" type="button" role="tab" aria-controls="token-gates-dashboard" aria-selected="false">
+                                        <span class="text-gradient">Token Gates</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Tabs end -->
+
+                        <!-- Tab content start -->
+                        <div class="tab-content mt-50">
+
+                            <!-- First tab pane start -->
+                            <div class="tab-pane active" id="team-dashboard" role="tabpanel" aria-labelledby="team-dashboard-tab">
+                                <div class="row row-eq-spacing-xl">
+
+                                    <!-- First column start -->
+                                    <div class="col-xl-5 align-self-center">
+                                        <div class="content">
+                                            <div class="fsr-5 fw-bold text-uppercase">
+                                                <span class="text-gradient">Team Dashboard</span>
+                                            </div>
+                                            <h2 class="display-5 fw-700 text-strong">
+                                                Easy to Start, <br class="d-none d-xl-block" />Easy to Manage
+                                            </h2>
+                                            <p class="text-muted fsr-5">
+                                                Create & manage team members and token gates in an intuative dashboard.
+                                            </p>
+                                            <h4 class="fsr-3 fw-700 text-strong mt-40">
+                                                Create Your Token Gates Instantly
+                                            </h4>
+
+                                            <!-- Icon section start -->
+                                            <div class="d-flex align-items-start content mb-0 mx-0">
+                                                <div class="flex-shrink-0 ws-50 hs-50 bg-content border border-2 border-secondary rounded-circle fs-base-p4 d-flex align-items-center justify-content-center me-30">
+                                                    <i class="fa-solid fa-cog text-gradient"></i>
+                                                </div>
+                                                <div>
+                                                    <h5 class="fsr-3 text-strong mt-0">
+                                                        Set Your Parameters
+                                                    </h5>
+                                                    <p>
+                                                        Whether you’re creating a Social or Ticket Gate, easily customize the amount of NFTs required or control occupancy.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <!-- Icon section end -->
+
+                                            <!-- Icon section start -->
+                                            <div class="d-flex align-items-start content mb-0 mx-0">
+                                                <div class="flex-shrink-0 ws-50 hs-50 bg-content border border-2 border-secondary rounded-circle fs-base-p4 d-flex align-items-center justify-content-center me-30">
+                                                    <i class="fa-solid fa-brush text-gradient"></i>
+                                                </div>
+                                                <div>
+                                                    <h5 class="fsr-3 text-strong mt-0">
+                                                        Customize the Look
+                                                    </h5>
+                                                    <p>
+                                                        Add your own banner image and edit certain colors to best suite your brand.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <!-- Icon section end -->
+
+                                            <div class="mt-20">
+                                                <a href="https://socialpass.nftytesting.com/accounts/login/" class="btn btn-gradient btn-lg py-sm-15 px-sm-20 me-5 mt-10">Create an Account</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- First column end -->
+
+                                    <!-- Second column start -->
+                                    <div class="col-xl-6 offset-xl-1 align-self-center">
+                                        <div class="content">
+                                            <img src="https://res.cloudinary.com/nfty-labs/image/upload/v1652295274/1a8d7c489cc9700592bd636f7c8ef6a3_hwprvo.png" class="d-block h-auto rounded-5 shadow-lg mw-100 mx-auto my-10 my-sm-20" alt="Team dashboard image">
+                                        </div>
+                                    </div>
+                                    <!-- Second column end -->
+
+                                </div>
+                            </div>
+                            <!-- First tab pane end -->
+
+                            <!-- Second tab pane start -->
+                            <div class="tab-pane" id="token-gates" role="tabpanel" aria-labelledby="token-gates-tab">
+                                <div class="row row-eq-spacing-xl">
+
+                                    <!-- First column start -->
+                                    <div class="col-xl-5 align-self-center">
+                                        <div class="content">
+                                            <div class="fsr-5 fw-bold text-uppercase">
+                                                <span class="text-gradient">Token Gates</span>
+                                            </div>
+                                            <h2 class="display-5 fw-700 text-strong">
+                                                Web2 to Web3 on One Platform
+                                            </h2>
+                                            <h4 class="fsr-3 fw-700 text-strong mt-40">
+                                                Host Your NFT Events with Ease
+                                            </h4>
+
+                                            <!-- Icon section start -->
+                                            <div class="d-flex align-items-start content mb-0 mx-0">
+                                                <div class="flex-shrink-0 ws-50 hs-50 bg-content border border-2 border-secondary rounded-circle fs-base-p4 d-flex align-items-center justify-content-center me-30">
+                                                    <i class="fa-solid fa-receipt text-gradient"></i>
+                                                </div>
+                                                <div>
+                                                    <h5 class="fsr-3 text-strong mt-0">
+                                                        IRL or Virtual Events
+                                                    </h5>
+                                                    <p>
+                                                        Easily invite specified token-holders to events. Each user recieves a custom ticket that can be verified at the door with SocialPass’s scanner.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <!-- Icon section end -->
+
+                                            <!-- Icon section start -->
+                                            <div class="d-flex align-items-start content mb-0 mx-0">
+                                                <div class="flex-shrink-0 ws-50 hs-50 bg-content border border-2 border-secondary rounded-circle fs-base-p4 d-flex align-items-center justify-content-center me-30">
+                                                    <i class="fa-solid fa-dollar text-gradient"></i>
+                                                </div>
+                                                <div>
+                                                    <h5 class="fsr-3 text-strong mt-0">
+                                                        Zero Third-Party Fees
+                                                    </h5>
+                                                    <p>
+                                                        Create and publish tickets without third-parties taking a cut on ticket sales. Since your digital assets are the key to access, you reap all the rewards!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <!-- Icon section end -->
+
+                                            <!-- Icon section start -->
+                                            <div class="d-flex align-items-start content mb-0 mx-0">
+                                                <div class="flex-shrink-0 ws-50 hs-50 bg-content border border-2 border-secondary rounded-circle fs-base-p4 d-flex align-items-center justify-content-center me-30">
+                                                    <i class="fa-solid fa-flag text-gradient"></i>
+                                                </div>
+                                                <div>
+                                                    <h5 class="fsr-3 text-strong mt-0">
+                                                        Record & Reward Attendees
+                                                    </h5>
+                                                    <p>
+                                                        Collect attendances for your team’s records and seamlessly reward event-goers with rewards in one step.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <!-- Icon section end -->
+
+                                        </div>
+                                    </div>
+                                    <!-- First column end -->
+
+                                    <!-- Second column start -->
+                                    <div class="col-xl-6 offset-xl-1 align-self-center">
+                                        <div class="content">
+                                            <img src="https://res.cloudinary.com/nfty-labs/image/upload/v1652294367/3d7ea18a5866a19cf2cfdb702c35c286_vbgcqw.png" class="d-block h-auto rounded-5 shadow-lg mw-100 mx-auto my-10 my-sm-20" alt="Token gates image">
+                                        </div>
+                                    </div>
+                                    <!-- Second column end -->
+
+                                </div>
+                            </div>
+                            <!-- Second tab pane end -->
+
+                        </div>
+                        <!-- Tab content end -->
+
+                    </div>
+                </section>
+                <!-- Features section end -->
+
+                <!-- Pricing section start -->
+                <section class="bg-gradient" id="pricing">
+                    <div class="container-xl py-50">
+                        <div class="content">
+                            <h2 class="display-5 fw-700 text-strong text-center">
+                                Plans for Every <span class="text-gradient">Community</span>
+                            </h2>
+                        </div>
+
+                        <div class="row row-eq-spacing-md mt-50">
+
+                            <!-- First column start -->
+                            <div class="col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-xxl-3">
+                                <div class="card rounded-5 border-2 border-transparent shadow">
+                                    <h3 class="card-title fsr-3 text-strong">
+                                        Starter
+                                    </h3>
+                                    <p class="mt-0">
+                                        100 - 1000 Person Event
+                                    </p>
+                                    <div class="mt-30 hs-75">
+                                        <span class="fs-base-p18 fw-bold text-gradient">$2</span>
+                                        <span class="ms-5">per Attendee</span>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-lg btn-block text-primary">Get Started</a>
+                                    </div>
+                                    <ul class="unordered-list mt-30 mb-0 hs-md-200">
+                                        <li>Fully customizable profile & dashboard</li>
+                                        <li>Invite & collab with team members</li>
+                                        <li>Infinite token gates</li>
+                                        <li>24 hour customer support</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- First column end -->
+
+                            <!-- Second column start -->
+                            <div class="col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-xxl-3">
+                                <div class="card rounded-5 border-2 border-secondary shadow">
+                                    <h3 class="card-title fsr-3 text-strong">
+                                        Pro
+                                    </h3>
+                                    <p class="mt-0">
+                                        1,000 - 5,000 Person Event
+                                    </p>
+                                    <div class="mt-30 hs-75">
+                                        <span class="fs-base-p18 fw-bold text-gradient">$3</span>
+                                        <span class="ms-5">per Attendee</span>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-gradient btn-lg btn-block rounded-3">Get Started</a>
+                                    </div>
+                                    <ul class="unordered-list mt-30 mb-0 hs-md-200">
+                                        <li>Fully customizable profile & dashboard</li>
+                                        <li>Invite & collab with team members</li>
+                                        <li>Infinite token gates</li>
+                                        <li>24 hour customer support</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Second column end -->
+
+                            <div class="v-spacer d-xxl-none"></div>
+
+                            <!-- Third column start -->
+                            <div class="col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-xxl-3">
+                                <div class="card rounded-5 border-2 border-transparent shadow">
+                                    <h3 class="card-title fsr-3 text-strong">
+                                        Partyhouse
+                                    </h3>
+                                    <p class="mt-0">
+                                        5,000 - 10,000 Person Event
+                                    </p>
+                                    <div class="mt-30 hs-75">
+                                        <span class="fs-base-p18 fw-bold text-gradient">$3.5</span>
+                                        <span class="ms-5">per Attendee</span>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-lg btn-block text-primary">Get Started</a>
+                                    </div>
+                                    <ul class="unordered-list mt-30 mb-0 hs-md-200">
+                                        <li>Fully customizable SDK</li>
+                                        <li>Host token gates on your own website</li>
+                                        <li>Infinite token gates</li>
+                                        <li>24 hour customer support</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Third column end -->
+
+                            <!-- Fourth column start -->
+                            <div class="col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-xxl-3">
+                                <div class="card rounded-5 border-2 border-transparent shadow">
+                                    <h3 class="card-title fsr-3 text-strong">
+                                        Enterprise
+                                    </h3>
+                                    <p class="mt-0">
+                                        10,000+ Person Event
+                                    </p>
+                                    <div class="mt-30 hs-75">
+                                        <span class="fs-base-p10 fw-bold">Custom Quote</span>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-lg btn-block text-primary">Get Started</a>
+                                    </div>
+                                    <ul class="unordered-list mt-30 mb-0 hs-md-200">
+                                        <li>Fully customizable SDK</li>
+                                        <li>Host token gates on your own website</li>
+                                        <li>Infinite token gates</li>
+                                        <li>24 hour customer support</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Fourth column end -->
+
+                        </div>
+                    </div>
+                </section>
+                <!-- Pricing section start -->
+
+                <!-- Get started section start -->
+                <section id="get-started">
+                    <div class="container-xl py-50 px-xl-50">
+                        <div class="content">
+                            <h3 class="display-5 fw-700 text-strong text-center">
+                                Ready to <span class="text-gradient">get started</span>?
+                            </h3>
+                            <div class="text-center">
+                                <a href="https://nftylabs.typeform.com/socialpass" class="btn btn-link btn-lg py-sm-15 px-sm-20 mt-10">
+                                    Contact Sales
+                                    <i class="fa-solid fa-angle-right ms-5"></i>
+                                </a>
+                            </div>
+                            <p class="text-center mt-30">
+                                Need help choosing a plan?
+                                <br class="d-sm-none" />
+                                <a href="https://nftylabs.typeform.com/socialpass" class="btn text-primary mt-10 mt-sm-0 ms-5">
+                                    Contact us
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!-- Get started section end -->
+
+            </div>
+        </div>
+
+    	<!-- Halfmoon JS -->
+    	<script src="js/halfmoon.js"></script>
+    </body>
+</html>
