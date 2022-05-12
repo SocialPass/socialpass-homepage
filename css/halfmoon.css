@@ -157,10 +157,10 @@
     --html-font-size: 62.5%; /* 62.5% is used for easier calculations, because the base is now set to 10px, so 1.4rem = 14px for example. */
     --html-font-size-1600: 71.428571428%; /* For screens with widths >= 1600px */
     --html-font-size-1920: 80.357142857%; /* For screens with widths >= 1920px */
-    --html-font-size-2560: 89.285714280%; /* For screens with widths >= 2560px */
-    --html-font-size-3000: 98.214285708%; /* For screens with widths >= 3000px */
-    --html-font-size-4000: 107.14285714%; /* For screens with widths >= 4000px */
-    --html-font-size-5120: 116.07142856%; /* For screens with widths >= 5120px */
+    --html-font-size-2560: 116.07142856%; /* For screens with widths >= 2560px */
+    --html-font-size-3000: 133.92857142%; /* For screens with widths >= 3000px */
+    --html-font-size-4000: 178.57142856%; /* For screens with widths >= 4000px */
+    --html-font-size-5120: 232.14285713%; /* For screens with widths >= 5120px */
 
     --base-sans-serif-font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     --base-serif-font-stack: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
