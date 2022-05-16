@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="socialpass-landing dark-mode readable-mode" data-hm-autoset-preferences="color-scheme">
+<html lang="en" class="socialpass-landing readable-mode">
     <head>
         <!-- Meta tags -->
         <meta charset="utf-8" />
@@ -42,7 +42,7 @@
 
         /**
          * --------------------------------------------------------------------
-         * [ NFTY theme ]
+         * [ SocialPass theme ]
          * --------------------------------------------------------------------
          */
 
@@ -55,53 +55,59 @@
         /* System colors */
 
         :root {
-            /* NFTY purple */
+            /* SocialPass blue */
 
-            --nfty-purple-color-hue: 287;
-            --nfty-purple-color-saturation: 47%;
-            --nfty-purple-color-lightness: 38%;
-            --nfty-purple-color-lightness-step-up-1: 44%;
-            --nfty-purple-color-lightness-step-up-2: 50%;
-            --nfty-purple-color-lightness-step-down-1: 32%;
-            --nfty-purple-color-lightness-step-down-2: 26%;
+            --socialpass-blue-color-hue: 195;
+            --socialpass-blue-color-saturation: 60%;
+            --socialpass-blue-color-lightness: 45%;
+            --socialpass-blue-color-lightness-step-up-1: 50%;
+            --socialpass-blue-color-lightness-step-up-2: 55%;
+            --socialpass-blue-color-lightness-step-down-1: 40%;
+            --socialpass-blue-color-lightness-step-down-2: 35%;
 
-            --nfty-purple-color-hsl: var(--nfty-purple-color-hue), var(--nfty-purple-color-saturation), var(--nfty-purple-color-lightness);
-            --nfty-purple-color-light-hsl: var(--nfty-purple-color-hue), var(--nfty-purple-color-saturation), var(--nfty-purple-color-lightness-step-up-2);
-            --nfty-purple-color-very-light-hsl: var(--nfty-purple-color-hue), var(--nfty-purple-color-saturation), 95%;
-            --nfty-purple-color-dim-hsl: var(--nfty-purple-color-hue), var(--nfty-purple-color-saturation), var(--nfty-purple-color-lightness-step-down-2);
-            --nfty-purple-color-very-dim-hsl: var(--nfty-purple-color-hue), 12.5%, 12.5%;
+            --socialpass-blue-color-hsl: var(--socialpass-blue-color-hue), var(--socialpass-blue-color-saturation), var(--socialpass-blue-color-lightness);
+            --socialpass-blue-color-light-hsl: var(--socialpass-blue-color-hue), var(--socialpass-blue-color-saturation), var(--socialpass-blue-color-lightness-step-up-2);
+            --socialpass-blue-color-very-light-hsl: var(--socialpass-blue-color-hue), var(--socialpass-blue-color-saturation), 95%;
+            --socialpass-blue-color-dim-hsl: var(--socialpass-blue-color-hue), var(--socialpass-blue-color-saturation), var(--socialpass-blue-color-lightness-step-down-2);
+            --socialpass-blue-color-very-dim-hsl: var(--socialpass-blue-color-hue), 12.5%, 12.5%;
 
-            --nfty-purple-color: hsl(var(--nfty-purple-color-hsl));
-            --nfty-purple-color-light: hsl(var(--nfty-purple-color-light-hsl));
-            --nfty-purple-color-very-light: hsl(var(--nfty-purple-color-very-light-hsl));
-            --nfty-purple-color-dim: hsl(var(--nfty-purple-color-dim-hsl));
-            --nfty-purple-color-very-dim: hsl(var(--nfty-purple-color-very-dim-hsl));
+            --socialpass-blue-color: hsl(var(--socialpass-blue-color-hsl));
+            --socialpass-blue-color-light: hsl(var(--socialpass-blue-color-light-hsl));
+            --socialpass-blue-color-very-light: hsl(var(--socialpass-blue-color-very-light-hsl));
+            --socialpass-blue-color-dim: hsl(var(--socialpass-blue-color-dim-hsl));
+            --socialpass-blue-color-very-dim: hsl(var(--socialpass-blue-color-very-dim-hsl));
 
-            --text-color-on-nfty-purple-color-bg: var(--white-color);
+            --text-color-on-socialpass-blue-color-bg: var(--white-color);
 
-            /* NFTY pink */
+            /* SocialPass orange */
 
-            --nfty-pink-color-hue: 340;
-            --nfty-pink-color-saturation: 69%;
-            --nfty-pink-color-lightness: 58%;
-            --nfty-pink-color-lightness-step-up-1: 64%;
-            --nfty-pink-color-lightness-step-up-2: 70%;
-            --nfty-pink-color-lightness-step-down-1: 52%;
-            --nfty-pink-color-lightness-step-down-2: 44%;
+            --socialpass-orange-color-hue: 16;
+            --socialpass-orange-color-saturation: 80%;
+            --socialpass-orange-color-lightness: 60%;
+            --socialpass-orange-color-lightness-step-up-1: 65%;
+            --socialpass-orange-color-lightness-step-up-2: 70%;
+            --socialpass-orange-color-lightness-step-down-1: 55%;
+            --socialpass-orange-color-lightness-step-down-2: 60%;
 
-            --nfty-pink-color-hsl: var(--nfty-pink-color-hue), var(--nfty-pink-color-saturation), var(--nfty-pink-color-lightness);
-            --nfty-pink-color-light-hsl: var(--nfty-pink-color-hue), var(--nfty-pink-color-saturation), var(--nfty-pink-color-lightness-step-up-2);
-            --nfty-pink-color-very-light-hsl: var(--nfty-pink-color-hue), var(--nfty-pink-color-saturation), 95%;
-            --nfty-pink-color-dim-hsl: var(--nfty-pink-color-hue), var(--nfty-pink-color-saturation), var(--nfty-pink-color-lightness-step-down-2);
-            --nfty-pink-color-very-dim-hsl: var(--nfty-pink-color-hue), 12.5%, 12.5%;
+            --socialpass-orange-color-hsl: var(--socialpass-orange-color-hue), var(--socialpass-orange-color-saturation), var(--socialpass-orange-color-lightness);
+            --socialpass-orange-color-light-hsl: var(--socialpass-orange-color-hue), var(--socialpass-orange-color-saturation), var(--socialpass-orange-color-lightness-step-up-2);
+            --socialpass-orange-color-very-light-hsl: var(--socialpass-orange-color-hue), var(--socialpass-orange-color-saturation), 95%;
+            --socialpass-orange-color-dim-hsl: var(--socialpass-orange-color-hue), var(--socialpass-orange-color-saturation), var(--socialpass-orange-color-lightness-step-down-2);
+            --socialpass-orange-color-very-dim-hsl: var(--socialpass-orange-color-hue), 12.5%, 12.5%;
 
-            --nfty-pink-color: hsl(var(--nfty-pink-color-hsl));
-            --nfty-pink-color-light: hsl(var(--nfty-pink-color-light-hsl));
-            --nfty-pink-color-very-light: hsl(var(--nfty-pink-color-very-light-hsl));
-            --nfty-pink-color-dim: hsl(var(--nfty-pink-color-dim-hsl));
-            --nfty-pink-color-very-dim: hsl(var(--nfty-pink-color-very-dim-hsl));
+            --socialpass-orange-color: hsl(var(--socialpass-orange-color-hsl));
+            --socialpass-orange-color-light: hsl(var(--socialpass-orange-color-light-hsl));
+            --socialpass-orange-color-very-light: hsl(var(--socialpass-orange-color-very-light-hsl));
+            --socialpass-orange-color-dim: hsl(var(--socialpass-orange-color-dim-hsl));
+            --socialpass-orange-color-very-dim: hsl(var(--socialpass-orange-color-very-dim-hsl));
 
-            --text-color-on-nfty-pink-color-bg: var(--white-color);
+            --text-color-on-socialpass-orange-color-bg: var(--white-color);
+
+            /* Midnight */
+
+            --midnight-color-hsl: 236, 67%, 14%;
+
+            --midnight-color: hsl(var(--midnight-color-hsl));
         }
 
         /* Context colors */
@@ -109,73 +115,51 @@
         :root {
             /* Primary colors */
 
-            --primary-color-hue: var(--nfty-purple-color-hue);
-            --primary-color-saturation: var(--nfty-purple-color-saturation);
-            --primary-color-lightness: var(--nfty-purple-color-lightness);
-            --primary-color-lightness-step-up-1: var(--nfty-purple-color-lightness-step-up-1);
-            --primary-color-lightness-step-up-2: var(--nfty-purple-color-lightness-step-up-2);
-            --primary-color-lightness-step-down-1: var(--nfty-purple-color-lightness-step-down-1);
-            --primary-color-lightness-step-down-2: var(--nfty-purple-color-lightness-step-down-2);
+            --primary-color-hue: var(--socialpass-blue-color-hue);
+            --primary-color-saturation: var(--socialpass-blue-color-saturation);
+            --primary-color-lightness: var(--socialpass-blue-color-lightness);
+            --primary-color-lightness-step-up-1: var(--socialpass-blue-color-lightness-step-up-1);
+            --primary-color-lightness-step-up-2: var(--socialpass-blue-color-lightness-step-up-2);
+            --primary-color-lightness-step-down-1: var(--socialpass-blue-color-lightness-step-down-1);
+            --primary-color-lightness-step-down-2: var(--socialpass-blue-color-lightness-step-down-2);
 
-            --primary-color-hsl: var(--nfty-purple-color-hsl);
-            --primary-color-light-hsl: var(--nfty-purple-color-light-hsl);
-            --primary-color-very-light-hsl: var(--nfty-purple-color-very-light-hsl);
-            --primary-color-dim-hsl: var(--nfty-purple-color-dim-hsl);
-            --primary-color-very-dim-hsl: var(--nfty-purple-color-very-dim-hsl);
+            --primary-color-hsl: var(--socialpass-blue-color-hsl);
+            --primary-color-light-hsl: var(--socialpass-blue-color-light-hsl);
+            --primary-color-very-light-hsl: var(--socialpass-blue-color-very-light-hsl);
+            --primary-color-dim-hsl: var(--socialpass-blue-color-dim-hsl);
+            --primary-color-very-dim-hsl: var(--socialpass-blue-color-very-dim-hsl);
 
-            --primary-color: var(--nfty-purple-color);
-            --primary-color-light: var(--nfty-purple-color-light);
-            --primary-color-very-light: var(--nfty-purple-color-very-light);
-            --primary-color-dim: var(--nfty-purple-color-dim);
-            --primary-color-very-dim: var(--nfty-purple-color-very-dim);
+            --primary-color: var(--socialpass-blue-color);
+            --primary-color-light: var(--socialpass-blue-color-light);
+            --primary-color-very-light: var(--socialpass-blue-color-very-light);
+            --primary-color-dim: var(--socialpass-blue-color-dim);
+            --primary-color-very-dim: var(--socialpass-blue-color-very-dim);
 
-            --text-color-on-primary-color-bg: var(--text-color-on-nfty-purple-color-bg);
+            --text-color-on-primary-color-bg: var(--text-color-on-socialpass-blue-color-bg);
 
             /* Primary colors */
 
-            --secondary-color-hue: var(--nfty-pink-color-hue);
-            --secondary-color-saturation: var(--nfty-pink-color-saturation);
-            --secondary-color-lightness: var(--nfty-pink-color-lightness);
-            --secondary-color-lightness-step-up-1: var(--nfty-pink-color-lightness-step-up-1);
-            --secondary-color-lightness-step-up-2: var(--nfty-pink-color-lightness-step-up-2);
-            --secondary-color-lightness-step-down-1: var(--nfty-pink-color-lightness-step-down-1);
-            --secondary-color-lightness-step-down-2: var(--nfty-pink-color-lightness-step-down-2);
+            --secondary-color-hue: var(--socialpass-orange-color-hue);
+            --secondary-color-saturation: var(--socialpass-orange-color-saturation);
+            --secondary-color-lightness: var(--socialpass-orange-color-lightness);
+            --secondary-color-lightness-step-up-1: var(--socialpass-orange-color-lightness-step-up-1);
+            --secondary-color-lightness-step-up-2: var(--socialpass-orange-color-lightness-step-up-2);
+            --secondary-color-lightness-step-down-1: var(--socialpass-orange-color-lightness-step-down-1);
+            --secondary-color-lightness-step-down-2: var(--socialpass-orange-color-lightness-step-down-2);
 
-            --secondary-color-hsl: var(--nfty-pink-color-hsl);
-            --secondary-color-light-hsl: var(--nfty-pink-color-light-hsl);
-            --secondary-color-very-light-hsl: var(--nfty-pink-color-very-light-hsl);
-            --secondary-color-dim-hsl: var(--nfty-pink-color-dim-hsl);
-            --secondary-color-very-dim-hsl: var(--nfty-pink-color-very-dim-hsl);
+            --secondary-color-hsl: var(--socialpass-orange-color-hsl);
+            --secondary-color-light-hsl: var(--socialpass-orange-color-light-hsl);
+            --secondary-color-very-light-hsl: var(--socialpass-orange-color-very-light-hsl);
+            --secondary-color-dim-hsl: var(--socialpass-orange-color-dim-hsl);
+            --secondary-color-very-dim-hsl: var(--socialpass-orange-color-very-dim-hsl);
 
-            --secondary-color: var(--nfty-pink-color);
-            --secondary-color-light: var(--nfty-pink-color-light);
-            --secondary-color-very-light: var(--nfty-pink-color-very-light);
-            --secondary-color-dim: var(--nfty-pink-color-dim);
-            --secondary-color-very-dim: var(--nfty-pink-color-very-dim);
+            --secondary-color: var(--socialpass-orange-color);
+            --secondary-color-light: var(--socialpass-orange-color-light);
+            --secondary-color-very-light: var(--socialpass-orange-color-very-light);
+            --secondary-color-dim: var(--socialpass-orange-color-dim);
+            --secondary-color-very-dim: var(--socialpass-orange-color-very-dim);
 
-            --text-color-on-secondary-color-bg: var(--text-color-on-nfty-pink-color-bg);
-        }
-
-        .dark-mode {
-            /* NFTY purple */
-
-            --nfty-purple-color-hue: 290;
-            --nfty-purple-color-saturation: 80%;
-            --nfty-purple-color-lightness: 45%;
-            --nfty-purple-color-lightness-step-up-1: 55%;
-            --nfty-purple-color-lightness-step-up-2: 65%;
-            --nfty-purple-color-lightness-step-down-1: 45%;
-            --nfty-purple-color-lightness-step-down-2: 40%;
-
-            /* NFTY pink */
-
-            --nfty-pink-color-hue: 340;
-            --nfty-pink-color-saturation: 75%;
-            --nfty-pink-color-lightness: 58%;
-            --nfty-pink-color-lightness-step-up-1: 64%;
-            --nfty-pink-color-lightness-step-up-2: 70%;
-            --nfty-pink-color-lightness-step-down-1: 50%;
-            --nfty-pink-color-lightness-step-down-2: 42%;
+            --text-color-on-secondary-color-bg: var(--text-color-on-socialpass-orange-color-bg);
         }
 
         /* Buttons */
@@ -201,29 +185,21 @@
             --button-webkit-font-smoothing: var(--base-webkit-font-smoothing);
             --button-moz-osx-font-smoothing: var(--button-moz-osx-font-smoothing);
 
+            --button-text-color: var(--secondary-color);
+
             /* Link button */
 
             --button-link-webkit-font-smoothing: var(--base-webkit-font-smoothing);
             --button-link-moz-osx-font-smoothing: var(--button-moz-osx-font-smoothing);
         }
 
-        .btn-gradient {
-            -webkit-font-smoothing: var(--base-webkit-font-smoothing);
-            -moz-osx-font-smoothing: var(--base-moz-osx-font-smoothing);
-            color: var(--text-color-on-primary-color-bg);
-            background-color: var(--primary-color);
-            background-image: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
-            border: 0;
-        }
+        /* Lists */
 
-        .btn-gradient:hover {
-            color: var(--text-color-on-primary-color-bg);
-            background-image: linear-gradient(135deg, var(--secondary-color-dim), var(--primary-color-dim));
-        }
+        :root,
+        .dark-mode {
+            /* Unordered list */
 
-        .btn-gradient:active {
-            color: var(--text-color-on-primary-color-bg);
-            background-image: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+            --unordered-list-item-bullet-bg-color: currentColor;
         }
 
         /* Dropdown */
@@ -232,15 +208,20 @@
             --dropdown-menu-border-radius: var(--rounded-5-border-radius);
         }
 
+        /* Background color utilities */
+
+        .bg-white-10-percent {
+            background-color: hsla(var(--white-color-hsl), 0.1) !important;
+        }
+
         /* Text utilities */
 
-        .text-gradient {
-            color: var(--primary-color) !important;
-            background: -webkit-linear-gradient(0deg, var(--secondary-color), var(--primary-color)) !important;
-            -webkit-background-clip: text !important;
-            -webkit-text-fill-color: transparent !important;
-            -webkit-font-smoothing: auto !important;
-            -moz-osx-font-smoothing: auto !important;
+        .text-strong {
+            color: var(--midnight-color) !important;
+        }
+
+        .dark-mode .text-strong {
+            color: var(--white-color) !important;
         }
 
         @media (max-width: 576px) {
@@ -248,24 +229,9 @@
                 font-size: var(--base-font-size) !important;
             }
         }
-
-        /**
-         * --------------------------------------------------------------------
-         * [ SocialPass landing ]
-         * --------------------------------------------------------------------
-         */
-
-        .socialpass-landing .bg-gradient {
-            background-image: linear-gradient(60deg, transparent, hsla(var(--secondary-color-hsl), 0.15), hsla(var(--primary-color-hsl), 0.2), transparent);
-        }
-
-        .socialpass-landing.dark-mode .bg-gradient {
-            background-image: linear-gradient(60deg, transparent, hsla(var(--secondary-color-hsl), 0.075), hsla(var(--primary-color-hsl), 0.1), transparent);
-        }
-
         </style>
     </head>
-    <body class="bg-dark-dm">
+    <body>
         <div class="page-wrapper">
             <div class="content-wrapper">
 
@@ -274,21 +240,13 @@
                     <div class="container-xl px-xl-50">
                         <div class="content">
                             <div class="d-flex align-items-center">
-                                <img src="https://res.cloudinary.com/nfty-labs/image/upload/v1652295403/color-horizontal_tzq6zq.svg" class="hidden-dm ws-200 pe-none" alt="Logo">
-                                <img src="https://res.cloudinary.com/nfty-labs/image/upload/v1652295404/half-horizontal_ftaov4.svg" class="hidden-lm ws-200 pe-none" alt="Logo">
-
-                                <!-- Dark mode toggle start -->
-                                <button class="btn btn-square btn-rounded ms-15" data-hm-toggle="dark-mode">
-                                    <i class="fa-solid fa-moon text-primary"></i>
-                                    <span class="visually-hidden">Toggle dark mode</span>
-                                </button>
-                                <!-- Dark mode toggle end -->
+                                <img src="https://res.cloudinary.com/nfty-labs/image/upload/v1652730224/socialpass-logo_hnegmd.svg" class="ws-150 ws-sm-200 pe-none" alt="SocialPass Logo">
 
                                 <!-- Menu dropdown start -->
-                                <div class="dropdown with-arrow d-inline-block d-lg-none ms-auto" data-hm-toggle="dropdown" aria-expanded="false">
-                                    <button class="btn text-primary" id="menu-dropdown-toggle">
+                                <div class="dropdown d-inline-block d-lg-none ms-auto" data-hm-toggle="dropdown" aria-expanded="false">
+                                    <button class="btn bg-gray-very-light border-transparent" id="menu-dropdown-toggle">
                                         <i class="fa-solid fa-bars"></i>
-                                        <span class="ms-5 d-none d-sm-inline">Menu</span>
+                                        <span>Menu</span>
                                     </button>
                                     <ul class="dropdown-menu dropdown-menu-end ws-250 p-10" aria-labelledby="menu-dropdown-toggle">
                                         <li>
@@ -342,8 +300,11 @@
                                         </li>
                                         <li class="dropdown-divider"></li>
                                         <li class="dropdown-content mt-10">
-                                            <a href="https://socialpass.nftytesting.com/accounts/login/" class="btn btn-gradient btn-block">
-                                                Log In/Sign Up
+                                            <a href="https://socialpass.nftytesting.com/accounts/login/" class="btn btn-block">
+                                                Sign In
+                                            </a>
+                                            <a href="https://socialpass.nftytesting.com/accounts/login/" class="btn btn-secondary btn-block mt-10">
+                                                Sign Up
                                             </a>
                                         </li>
                                     </ul>
@@ -421,7 +382,10 @@
                                     </div>
                                     <!-- Contact us dropdown end -->
 
-                                    <a href="https://socialpass.nftytesting.com/accounts/login/" class="btn btn-gradient">Log In/Sign Up</a>
+                                    <div class="text-strong me-30">
+                                        <a href="https://socialpass.nftytesting.com/accounts/login/" class="link-reset fw-bold text-decoration-none">Sign In</a>
+                                    </div>
+                                    <a href="https://socialpass.nftytesting.com/accounts/login/" class="btn btn-secondary">Sign Up</a>
                                 </div>
                                 <!-- Links end -->
                             </div>
